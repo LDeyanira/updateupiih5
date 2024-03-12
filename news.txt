@@ -1,0 +1,53 @@
+// Realizar una solicitud GET al backend para obtener las noticias
+      /*  fetch('show_news.php')
+    .then(response => response.json())
+    .then(data => {
+        // Manipular los datos recibidos y mostrar las noticias en el contenedor
+        const newsContainer = document.getElementById('newsContainer');
+
+        data.forEach(noticia => {
+            const noticiaElement = document.createElement('div');
+            noticiaElement.classList.add('noticia');
+
+            const tituloElement = document.createElement('h4');
+            tituloElement.textContent = noticia.Titulo;
+            tituloElement.classList.add('titulo');
+
+            const fechaElement = document.createElement('p');
+            fechaElement.textContent = `Date post: ${noticia.Fecha}`;
+            fechaElement.classList.add('fecha');
+
+            const descripcionElement = document.createElement('p');
+            descripcionElement.textContent = stripHtmlTags(noticia.Descripcion);
+            descripcionElement.classList.add('descripcion');
+            descripcionElement.style.display = 'none'; // Ocultar la descripción inicialmente
+
+            // Agregar evento de clic al título para mostrar la descripción
+            tituloElement.addEventListener('click', () => {
+                if (descripcionElement.style.display === 'none') {
+                    descripcionElement.style.display = 'block';
+                } else {
+                    descripcionElement.style.display = 'none';
+                }
+            });
+
+            noticiaElement.appendChild(tituloElement);
+            noticiaElement.appendChild(fechaElement);
+            noticiaElement.appendChild(descripcionElement);
+
+            newsContainer.appendChild(noticiaElement);
+        });
+        
+    })
+    .catch(error => console.error('Error al obtener las noticias', error));
+
+function stripHtmlTags(html) {
+    const tmp = document.createElement("div");
+    tmp.innerHTML = html;
+    return tmp.textContent || tmp.innerText || "";
+}*/
+
+this is the way to display the news but without the styles bar tools
+
+
+        
